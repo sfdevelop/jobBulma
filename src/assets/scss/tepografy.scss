@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "Appetite";
+  src: url("../fonts/appetite.ttf");
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.display-1 {
+  font-family: Appetite;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: left;
+  color: #432523;
+
+}
+.main{
+  p{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 33px;
+    text-align: left;
+    color: #432523;
+  }
+}

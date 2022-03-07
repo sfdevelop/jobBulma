@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://use.fontawesome.com/releases/v6.0.0-beta2/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="app">
+    <div class="container is-fullhd bulma-menu px-3">
+        <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a>
+    
+                <a
+                        role="button"
+                        class="navbar-burger"
+                        aria-label="menu"
+                        aria-expanded="false"
+                        data-target="navbarBasicExample"
+                        v-on:click="openBurger"
+                >
+    
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+                <div id="navbarBasicExample"
+                     class="mobile_menu"
+                     v-bind:class="{ navbarIsActive: isActive }"
+                >
+                    <div class="navbar-start">
+                        <a class="navbar-item ">
+                            Главная
+                        </a>
+    
+                        <a class="navbar-item active">
+                            Соискателям
+                        </a>
+    
+                        <a class="navbar-item">
+                            Работодателям
+                        </a>
+                    </div>
+    
+                    <div class="navbar-end pr-2">
+                        <div class="navbar-item">
+                            <form action="">
+                                <input class="input is-rounded search is-two-fifths" type="text" placeholder="search">
+                            </form>
+                        </div>
+                        <div class="navbar-item">
+    
+                            <figure class="image">
+                                <img src="assets/i/avatar_non_photo.svg">
+                            </figure>
+                            <a href="">
+                                <span class="ml-3 has-text-black">Вход в кабинет</span>
+                            </a>
+                        </div>
+    
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                RU
+                            </a>
+    
+                            <div class="navbar-dropdown is-right">
+                                <a class="navbar-item">
+                                    PL
+                                </a>
+                                <a class="navbar-item">
+                                    DE
+                                </a>
+                                <a class="navbar-item">
+                                    EN
+                                </a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+        </nav>
+    </div>
+    <section class="hero is-medium main">
+        <div class="hero-body">
+            <div class="container is-fullhd">
+                <div class="columns">
+                    <div class="column is-half-widescreen">
+                        <h1 class="display-1 ">Ищешь работу или работников?</h1>
+                        <p class="subtitle my-6">
+                            Тогда ты по адресу! Здесь ты сможешь найти достойною работу и квалифицированных работников
+                        </p>
+                        <a href="" class="button are-large is-uppercase">смотреть вакансии</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vacancies px-3">
+        <div class="container is-fullhd">
+            <h2 class="my-6">
+                Новые вакансии
+            </h2>
+    
+            <div class="columns is-multiline">
+                <div class="column is-one-third-fullhd is-half-widescreen is-half-tablet">
+                    <div class="box_column px-5 py-5 is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div>
+                            <div class="box_column__head">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <div class="column ">
+                                        <article class="media">
+                                            <figure class="media-left">
+                                                <p class="image">
+                                                    <img src="../../assets/i/pepsi.png">
+                                                </p>
+                                            </figure>
+                                            <div class="media-content">
+                                                <div class="content">
+                                                    <div class="title is-size-5-mobile">Pepsi</div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="column">
+                                        <div class="has-text-right">
+                                            <div class="is-size-6 is-size-7-mobile">Оплата</div>
+                                            <div class="is-size-4  has-text-weight-bold montserrat is-size-6-mobile">3000 <span
+                                                    class="is-size-5 is-size-6-mobile has-text-weight-normal">EUR</span></div>
+                                            <div class="is-size-7">в месяц</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_column__body box_column__body mt-4">
+                                <div class="title is-size-4 is-size-5-mobile">
+                                    Монтажник или помощник по вентиляции
+                                </div>
+                                <p>
+                                    Компания Пепси наймет монтажника или монтажника вентиляции. Немедленно работайте. Работа
+                                    в Мюнхене. Свяжитесь с нами, если вы заинтересованы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="is-flex is-justify-content-space-between box_column__footer mt-4">
+                            <div class="column">
+                                <div class="is-size-6">Мюнхен</div>
+                                <div class="is-size-6 brown">03.03.2022</div>
+                            </div>
+                            <div class="column has-text-right is-flex is-justify-content-end is-align-items-center">
+                                <a href="" class="button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-fullhd is-half-widescreen is-half-tablet">
+                    <div class="box_column px-5 py-5 is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div>
+                            <div class="box_column__head">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <div class="column ">
+                                        <article class="media">
+                                            <figure class="media-left">
+                                                <p class="image">
+                                                    <img src="../../assets/i/pepsi.png">
+                                                </p>
+                                            </figure>
+                                            <div class="media-content">
+                                                <div class="content">
+                                                    <div class="title is-size-5-mobile">Pepsi</div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="column">
+                                        <div class="has-text-right">
+                                            <div class="is-size-6 is-size-7-mobile">Оплата</div>
+                                            <div class="is-size-4  has-text-weight-bold montserrat is-size-6-mobile">3000 <span
+                                                    class="is-size-5 is-size-6-mobile has-text-weight-normal">EUR</span></div>
+                                            <div class="is-size-7">в месяц</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_column__body box_column__body mt-4">
+                                <div class="title is-size-4 is-size-5-mobile">
+                                    Монтажник или помощник по вентиляции
+                                </div>
+                                <p>
+                                    Компания Пепси наймет монтажника или монтажника вентиляции. Немедленно работайте. Работа
+                                    в Мюнхене. Свяжитесь с нами, если вы заинтересованы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="is-flex is-justify-content-space-between box_column__footer mt-4">
+                            <div class="column">
+                                <div class="is-size-6">Мюнхен</div>
+                                <div class="is-size-6 brown">03.03.2022</div>
+                            </div>
+                            <div class="column has-text-right is-flex is-justify-content-end is-align-items-center">
+                                <a href="" class="button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-fullhd is-half-widescreen is-half-tablet">
+                    <div class="box_column px-5 py-5 is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div>
+                            <div class="box_column__head">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <div class="column ">
+                                        <article class="media">
+                                            <figure class="media-left">
+                                                <p class="image">
+                                                    <img src="../../assets/i/pepsi.png">
+                                                </p>
+                                            </figure>
+                                            <div class="media-content">
+                                                <div class="content">
+                                                    <div class="title is-size-5-mobile">Pepsi</div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="column">
+                                        <div class="has-text-right">
+                                            <div class="is-size-6 is-size-7-mobile">Оплата</div>
+                                            <div class="is-size-4  has-text-weight-bold montserrat is-size-6-mobile">3000 <span
+                                                    class="is-size-5 is-size-6-mobile has-text-weight-normal">EUR</span></div>
+                                            <div class="is-size-7">в месяц</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_column__body box_column__body mt-4">
+                                <div class="title is-size-4 is-size-5-mobile">
+                                    Монтажник или помощник по вентиляции
+                                </div>
+                                <p>
+                                    Компания Пепси наймет монтажника или монтажника вентиляции. Немедленно работайте. Работа
+                                    в Мюнхене. Свяжитесь с нами, если вы заинтересованы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="is-flex is-justify-content-space-between box_column__footer mt-4">
+                            <div class="column">
+                                <div class="is-size-6">Мюнхен</div>
+                                <div class="is-size-6 brown">03.03.2022</div>
+                            </div>
+                            <div class="column has-text-right is-flex is-justify-content-end is-align-items-center">
+                                <a href="" class="button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-fullhd is-half-widescreen is-half-tablet">
+                    <div class="box_column px-5 py-5 is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div>
+                            <div class="box_column__head">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <div class="column ">
+                                        <article class="media">
+                                            <figure class="media-left">
+                                                <p class="image">
+                                                    <img src="../../assets/i/pepsi.png">
+                                                </p>
+                                            </figure>
+                                            <div class="media-content">
+                                                <div class="content">
+                                                    <div class="title is-size-5-mobile">Pepsi</div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="column">
+                                        <div class="has-text-right">
+                                            <div class="is-size-6 is-size-7-mobile">Оплата</div>
+                                            <div class="is-size-4  has-text-weight-bold montserrat is-size-6-mobile">3000 <span
+                                                    class="is-size-5 is-size-6-mobile has-text-weight-normal">EUR</span></div>
+                                            <div class="is-size-7">в месяц</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_column__body box_column__body mt-4">
+                                <div class="title is-size-4 is-size-5-mobile">
+                                    Монтажник или помощник по вентиляции
+                                </div>
+                                <p>
+                                    Компания Пепси наймет монтажника или монтажника вентиляции. Немедленно работайте. Работа
+                                    в Мюнхене. Свяжитесь с нами, если вы заинтересованы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="is-flex is-justify-content-space-between box_column__footer mt-4">
+                            <div class="column">
+                                <div class="is-size-6">Мюнхен</div>
+                                <div class="is-size-6 brown">03.03.2022</div>
+                            </div>
+                            <div class="column has-text-right is-flex is-justify-content-end is-align-items-center">
+                                <a href="" class="button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="has-text-centered mt-6 is-block is-relative">
+                <a href="" class="button is-medium revers">Смотреть все вакансии</a>
+            </div>
+    
+        </div>
+    </section>
+    <section class="news px-3 ">
+        <div class="container is-fullhd">
+            <h2 class="my-6">
+                Самая свежая информация
+            </h2>
+    
+            <div class="columns is-multiline">
+                <div class="column is-one-third-fullhd is-one-third-widescreen is-half-tablet">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="">
+                                <figure class="image">
+                                    <img src="../../assets/i/news01.png" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="title is-size-4 is-size-5-mobile">
+                                    Как справиться с давлением окружающих, когда работа долго не находится, — советы
+                                    психолога
+                                </div>
+                                <p>
+                                    Бывает, поиск работы затягивается и напряжение возрастает. Мало того, что вы сами
+                                    начинаете нервничать, так еще и окружающие подливают масла в огонь: «Ну неужели ничего
+                                    нет?», «А ты все еще без работы?», «Поторопись и найди уже хоть что-то».
+                                </p>
+                                <a href="#" class="is-uppercase is-size-7 brown">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-fullhd is-one-third-widescreen is-half-tablet">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="">
+                                <figure class="image">
+                                    <img src="../../assets/i/news02.png" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="title is-size-4 is-size-5-mobile">
+                                    Как справиться с давлением окружающих, когда работа долго не находится, — советы
+                                    психолога
+                                </div>
+                                <p>
+                                    Бывает, поиск работы затягивается и напряжение возрастает. Мало того, что вы сами
+                                    начинаете нервничать, так еще и окружающие подливают масла в огонь: «Ну неужели ничего
+                                    нет?», «А ты все еще без работы?», «Поторопись и найди уже хоть что-то».
+                                </p>
+                                <a href="#" class="is-uppercase is-size-7 brown">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-fullhd is-one-third-widescreen is-half-tablet">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="">
+                                <figure class="image">
+                                    <img src="../../assets/i/news03.png" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="title is-size-4 is-size-5-mobile">
+                                    Как справиться с давлением окружающих, когда работа долго не находится, — советы
+                                    психолога
+                                </div>
+                                <p>
+                                    Бывает, поиск работы затягивается и напряжение возрастает. Мало того, что вы сами
+                                    начинаете нервничать, так еще и окружающие подливают масла в огонь: «Ну неужели ничего
+                                    нет?», «А ты все еще без работы?», «Поторопись и найди уже хоть что-то».
+                                </p>
+                                <a href="#" class="is-uppercase is-size-7 brown">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <section class="subscribe py-6 my-6 px-3">
+        <div class="container is-fullhd ">
+            <div class="is-flex is-justify-content-end">
+                <div class="column is-6-widescreen">
+                    <div class="forms p-6">
+                        <h3 class="is-size-3 is-size-4-mobile has-text-centered appetite">
+                            Будьте в курсе событий!
+                        </h3>
+                        <h3 class="is-size-3 is-size-4-mobile has-text-centered mb-4 appetite">
+                            Подпишитесь на новые вакансии!
+                        </h3>
+                        <p>
+                            Подпишитесь на получение новых вакансий, которые появляются на сайте. Выберите рубрику вакансий,
+                            которая Вас интересует, если рубрика выбрана не будет, то Вы будете получать уведомления обо
+                            всех новых вакансиях3
+                        </p>
+                        <form action="" class="mt-4">
+                            <div class="field">
+                                <label class="label is-size-6">Email*</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="example@example.com">
+                                </div>
+                                <p class="help is-danger">This email is invalid</p>
+                            </div>
+                            <label class="label is-size-6">Выберите рубрику*</label>
+                            <div class="select">
+    
+                                <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width: 100%">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                                <p class="help is-danger">This email is invalid</p>
+                            </div>
+                            <div class="field mt-5">
+                                <div class="control">
+                                    <label class="checkbox is-size-7 has-text-grey-light">
+                                        <input type="checkbox" checked>
+                                        Ознакомлен и согласен с <a href="">политикой конфиденциальности</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="field mt-5">
+                                <button type="submit" class="button">Подписаться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="howWork px-3">
+        <div class="container is-fullhd my-6">
+            <div class="columns">
+                <div class="column is-6-widescreen">
+                    <h3 class="is-size-3 has-text-weight-bold appetite">Как работает сервис?</h3>
+                    <p>
+                        Это специализированный сервис, направленный на то, чтобы помочь Вам найти квалифицированного
+                        помощника или достойную работу без посредников и в самый сжатый срок
+                    </p>
+                    <p>
+                        Для этого достаточно пройти несложный процесс регистрации и перейти к просмотру имеющихся на сайте
+                        анкет соискателей или вакансий от прямых работодателей.
+                        Сервис очень прост и удобен в использовании, но при этом максимально эффективен в поиске.
+                        Специальная поисковая система сайта разработана таким образом, что Вы сможете подобрать работу или
+                        помощницу, максимально отвечающую Вашим требованиям и пожеланиям. Еще одним преимуществом сайта
+                        является то, что Вы можете искать работу или помощницу в любое удобное время дня и ночи.
+                    </p>
+                    <p>
+                        Если у Вас все еще остались вопросы Вы можете найти на них ответы. Мы подготовили список вопросов и
+                        ответов на самые распространенные и часто задаваемые вопросы.
+                    </p>
+    
+                    <a href="" class="button mt-4">Найти ответ</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="px-3 py-6">
+        <div class="container is-fullhd">
+            <div class="columns is-multiline">
+                <div class="column is-one-fifth">
+                    logo
+                </div>
+    
+    
+                <div class="column is-one-fifth">
+                    <ul>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Частые вопросы</a></li>
+                        <li><a href="">Частные объявления</a></li>
+                    </ul>
+                </div>
+    
+                <div class="column is-one-fifth">
+                    <ul>
+                        <li><a href="">Вакансии Работодателям</a></li>
+                        <li><a href="">Вакансии Соискателям</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+    
+                <div class="column is-one-fifth">
+                    <ul>
+                        <li><a href="">Личный кабинет</a></li>
+                        <li><a href="">Блог</a></li>
+                    </ul>
+                </div>
+    
+                <div class="column footer-right is-one-fifth has-text-right is-flex is-flex-direction-column is-justify-content-space-between is-align-items-end">
+                    <a style="max-width: 239px" href="" class="button revers">Подать объявление</a>
+                    <div class="is-flex is-justify-content-end">
+                        <a href="" class="mx-3 is-size-7">Facebook</a>
+                        <a href="" class="mx-3 is-size-7">Instagram</a>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="columns">
+                <div class="column is-offset-one-fifth-widescreen is-offset-one-fifth-fullhd ">
+                    <h4 class="has-text-white is-size-5 has-text-weight-bold">
+                        Контакты
+                    </h4>
+                </div>
+            </div>
+            <div class="columns out_fonts">
+                <div class="column is-one-fifth is-offset-one-fifth-widescreen is-offset-one-fifth-fullhd">
+                    <article class="media">
+                        <figure class="media-left mt-2">
+                            <p class="image is-16x16">
+                                <img src="../../assets/i/svg/location.svg" alt="location">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content ">
+                                <ul class="mt-0 ml-0 has-text-white">
+                                    <li>
+                                        ул. Маркграфенштрассе 30 <br>
+                                        45138 Эссен
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </article>
+    
+                    <article class="media">
+                        <figure class="media-left mt-2">
+                            <p class="image is-16x16">
+                                <img src="../../assets/i/svg/phone.svg" alt="phone">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content ">
+                                <ul class="mt-0 ml-0 has-text-white">
+                                    <li>
+                                        <a href="tel:0000000000">+49 15774567459</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:0000000000">+49 15774567459</a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </article>
+                </div>
+                <div class="column is-one-fifth">
+                    <article class="media">
+                        <figure class="media-left mt-2">
+                            <p class="image is-16x16">
+                                <img src="../../assets/i/svg/location.svg" alt="location">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content ">
+                                <ul class="mt-0 ml-0 has-text-white">
+                                    <li>
+                                        ул. Кача 9 лок I <br>
+                                        01-013 Варшава
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </article>
+    
+                    <article class="media">
+                        <figure class="media-left mt-2">
+                            <p class="image is-16x16">
+                                <img src="../../assets/i/svg/phone.svg" alt="phone">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content ">
+                                <ul class="mt-0 ml-0 has-text-white">
+                                    <li>
+                                        <a href="tel:0000000000">+49 15774567459</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:0000000000">+49 15774567459</a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </article>
+                </div>
+                <div class="column is-one-fifth">
+                    <article class="media">
+                        <figure class="media-left mt-2">
+                            <p class="image is-16x16">
+                                <img src="../../assets/i/svg/location.svg" alt="location">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content ">
+                                <ul class="mt-0 ml-0 has-text-white">
+                                    <li>
+                                        ул Чистяковская 2 офис 13 <br>
+                                        01078 Киев
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </article>
+    
+                    <article class="media">
+                        <figure class="media-left mt-2">
+                            <p class="image is-16x16">
+                                <img src="../../assets/i/svg/phone.svg" alt="phone">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content ">
+                                <ul class="mt-0 ml-0 has-text-white">
+                                    <li>
+                                        <a href="tel:0000000000">+49 15774567459</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:0000000000">+49 15774567459</a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </article>
+                </div>
+                <div class="column is-one-fifth is-flex is-flex-direction-column is-justify-content-end">
+                    <div class="is-flex footer-right is-justify-content-end">
+                        <a href="">
+                            <img class="mr-2" src="../../assets/i/svg/telegram.svg" alt="telegram">
+                        </a>
+                        <a href="">
+                            <img class="mr-2" src="../../assets/i/svg/whatsapp.svg" alt="whatsapp">
+                        </a>
+                        <a href="">
+                            <img class="mr-2" src="../../assets/i/svg/viber.svg" alt="viber">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--//= tpl/_main.html-->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script src="assets/js/main.js"></script>
+<!--<script>-->
+<!--    var app = new Vue({-->
+<!--        el: '#app',-->
+<!--        data:{-->
+<!--            message: 'Hello'-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+</body>
+</html>
