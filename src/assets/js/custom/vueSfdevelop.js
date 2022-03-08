@@ -1,12 +1,16 @@
 var app = new Vue({
     el: '#app',
     data: {
-        isActive: true
+        isActive: true,
+        isDropdown:false
     },
     methods: {
         openBurger: function() {
             this.isActive = !this.isActive;
-            // some code to filter users
-        }
+        },
+
+        openDropdown: function() {
+            this.isDropdown = !this.isDropdown;
+         }
     }
 })

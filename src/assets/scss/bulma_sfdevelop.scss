@@ -205,16 +205,3 @@ footer {
 .is-16x16 {
   max-width: 16px;
 }
-.navbarIsActive{
-  display: none;
-}
-
-.mobile_menu{
-  position: fixed;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 10000;
-  background-color: $white;
-}
